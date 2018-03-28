@@ -35,8 +35,7 @@ try:
     for i in range(0,len(Ex_website)-1):
         Ex_map[Ex_name[i]] = Ex_website[i]
 except ValueError:
-    print('The length of namelist and website cannot match')
-
+    print('The length of namelist and website cannot match!')
 
 print(Ex_map)
 
