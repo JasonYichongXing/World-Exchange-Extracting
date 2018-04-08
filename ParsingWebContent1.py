@@ -31,10 +31,10 @@ Ex_website = [x for x in Ex_website if x[0]=='w' or x[0:3]=='htt']
 # map into the dict
 Ex_map = {}
 try:
-    len(Ex_website) == len(Ex_name)
+    # len(Ex_website) == len(Ex_name)
     for i in range(0,len(Ex_website)-1):
         Ex_map[Ex_name[i]] = Ex_website[i]
-except ValueError:
+except:
     print('The length of namelist and website cannot match!')
 
 print(Ex_map)
